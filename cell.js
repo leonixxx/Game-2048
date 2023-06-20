@@ -7,7 +7,7 @@ export class Cell {
         this.y = y;
     }
     linkTile(tile) {
-        tile(setXY(this.x, this.y));
+        tile.setXY(this.x, this.y);
         this.linkTile = tile;
     }
     isEmpty () {
